@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+  }
+body{font-family: 'Encode Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+.pagina{
+    display: flex;
+    justify-content: center;
+}
+
+ion-icon{
+    margin-left: 20px;
+    font-size: 30px;
+}
+ion-icon:hover{
+    opacity: 60%;
+    cursor: pointer;
+}
+
+.top{  
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 54px;
+    width: 100%;
+    border-bottom: 1px solid #dbdbdb;
+    background-color: #ffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding-right: 20px;
+}
+.logo-desktop{
+    border-left: 1px solid #DBDBDB;
+    padding-left: 10px;
+   
+}
+.logo-mobile{
+    display: none;
+}
+.icones-direita{
+    display: flex;
+    justify-content: space-between;
+}
+
+.caixa-pesquisa{
+    background-color: #fafafa;
+    border-radius: 3px;
+    color: #979797;
+    border: 1px solid #DBDBDB;
+    width: 215px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    width: 614px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 54px;
+    margin-bottom: 55px;  
+}
+.storie{     
+    width: 100%;
+    height: 118px;
+    margin:30px 0px 30px 0px;
+    border:1px solid #dbdbdb;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    position: relative;  
+    overflow: hidden;
+}
+.storie div{
+    font-size: 12px;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.storie div:hover{
+    cursor: pointer;
+    opacity: 80%;
+}
+.storie img{
+    height: 66px;
+    width: 66px;
+    border-radius: 100%;
+    border: double 4px transparent ;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgb(255, 102, 0),#ff06f3);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    
+
+}
+.icone{
+    color:gray;
+    position: absolute;
+    right: 10px;
+}
+
+.post{ 
+    margin-top: 20px;
+    height: 749px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:1px solid #dbdbdb;
+    border-radius: 3px;   
+}
+.post-superior{   
+    width: 100%;
+    height:60px ;
+    display: flex;
+    align-items: center;
+    position: relative;   
+}
+.post-superior ion-icon{
+    position: absolute;
+    right: 10px;
+
+}
+
+.post .post-superior img{
+    margin:17px;
+    width: 32px;
+    height: 32px;
+}
+
+.post img ,video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.post-inferior{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    position: relative;
+}
+.post .post-inferior img{
+    margin-right: 5px;
+    height: 20px;
+    width: 20px;
+}
+.curtidas{
+    margin: 15px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.comentar{
+    display: flex;
+    justify-content: center;
+}
+input{
+    height: 30px;
+    width: 80%;
+    margin-bottom: 5px;
+}
+button{
+    height: 30px;
+    margin-left: 5px;
+    transition: 300ms;
+    border: none;
+    background-color: #B2DFFC;
+}
+button:hover{
+    background-color: #0095F6;
+    cursor: pointer;
+}
+.post-inferior ion-icon:last-child{
+    position: absolute;
+    right: 10px;
+}
+.sidebar{
+    margin-left: 30px;
+    margin-top: 100px;
+    width: 350px;
+    position: relative;
+}
+
+.top-sidebar{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.top-sidebar img{
+    position: absolute;
+    margin:10px;
+    height: 52px;
+    width: 52px;
+}
+.top-sidebar h2{
+    position: absolute;
+    top: 20px;
+    left:90px;
+    font-size:15px;
+}
+.sugestoes{
+    display: flex;
+    flex-direction: column;
+}
+.sugestoes p{
+    font-size: 17px;
+    color:#8E8E8E;
+}
+.sugestao{
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.sugestoes img{
+    height: 42px;
+    width: 42px;
+}
+.sugestoes h2{
+    position: absolute;
+    font-size: 14px;
+    top:8px;
+    left: 65px;
+}
+h5{
+    position: absolute;
+    font-size: 14px;
+    top:25px;
+    left: 65px;
+    color:#8E8E8E;
+
+}
+h4{
+    position: absolute;
+    color: #139EF2;
+    font-size: 14px;
+    right: 5px;
+    top:20px
+}
+h4:hover{
+    opacity: 60%;
+    cursor: pointer;
+}
+.barra-inferior{
+    display: none;
+}
+.direitos{
+    color:#C7C7C7;
+    font-size: 11px;
+    margin-top: 30px;
+    line-height: 13px;
+}
+
+@media (max-width: 935px){
+.sidebar{
+    display: none;
+}
+}

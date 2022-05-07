@@ -1,0 +1,43 @@
+.content{
+    width: 100%;
+}
+.caixa-pesquisa{
+    display: none;
+}
+.topo{
+    justify-content: space-between;
+}
+
+.logo-desktop{
+    display:none;
+    border: 0;
+}
+.logo-mobile{
+    display: block;
+}
+
+.icones-direita ion-icon:nth-last-child(-n + 3){
+    display: none
+}
+.storie{
+    border:none;
+}
+
+.post{
+   margin-bottom: 20px;
+}
+.barra-inferior{
+    height: 54px;
+    border-top: 1px solid #dbdbdb;
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar{
+    display: none;
+}
