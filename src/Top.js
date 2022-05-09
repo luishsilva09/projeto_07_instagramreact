@@ -1,13 +1,12 @@
-
-export default function Top(){
+export default function Top() {
     const icones = [
         'paper-plane-outline',
         'compass-outline',
         'heart-outline',
         'person-outline'
-    ]
-    
-    return(
+    ];
+
+    return (
         <div class="top">
             <div>
                 <ion-icon name="logo-instagram"></ion-icon>
@@ -19,5 +18,5 @@ export default function Top(){
                 {icones.map(icone => <ion-icon name={icone}></ion-icon>)}
             </div>
         </div>
-    )
-}
+    );
+};
